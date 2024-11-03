@@ -12,7 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_instance" "first-ec2" {
+resource "aws_instance" "molmo-quantized-instance" {
   ami           = "ami-0b72821e2f351e396"
-  instance_type = "t2.micro"
+  instance_type = "g4dn.xlarge"
 }
